@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 셔츠룸 | 정보</title>
+    <meta name="description" content="마포 셔츠룸의 모든 정보를 한눈에. 위치, 시간, 컨셉까지 — 궁금하면 직접 와서 확인하든가.">
+    <meta name="keywords" content="마포 셔츠룸 정보, 마포 카페 위치, 마포구 이색 카페, 브루털리즘 카페, 네온 카페, 셔츠룸 운영시간, 서울 힙플레이스">
+    <link rel="canonical" href="https://sf-t3-1779642675702-232.pages.dev/info">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sf-t3-1779642675702-232.pages.dev/info">
+    <meta property="og:title" content="마포 셔츠룸 | 정보 — 보는 게 답이다">
+    <meta property="og:description" content="거친 콘크리트, 네온 사인, 너를 위한 공간. 모든 건 다 계획이 있다.">
+    <meta property="og:image" content="https://sf-t3-1779642675702-232.pages.dev/og-info.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="마포 셔츠룸 | 정보 — 직설, 그 이상">
+    <meta name="twitter:description" content="여기 모든 정보가 있다. 읽고 결정해. 전화는 010-6279-0862">
+    <style>
+        /* === RESET & BASE === */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        body {
+            background-color: #0a0a0a;
+            color: #e0e0e0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        /* === TYPOGRAPHY === */
+        h1, h2, h3, h4, p, a, li, blockquote {
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            color: #ff00ff;
+            text-shadow: 2px 2px 0 #00ffff, 4px 4px 0 #ff00ff;
+        }
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 1.2rem;
+            border-left: 6px solid #ff00ff;
+            padding-left: 1rem;
+            color: #ffffff;
+        }
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.8rem;
+            color: #00ffff;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #b0b0b0;
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
+        }
+        a {
+            color: #ff00ff;
+            text-decoration: underline wavy 2px;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #00ffff;
+            text-decoration: none;
+        }
+
+        /* === LAYOUT === */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            flex: 1;
+        }
+        .section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #333;
+        }
+        .section:last-of-type {
+            border-bottom: none;
+        }
+        .grid-2, .grid-3 {
+            display: grid;
+            gap: 2rem;
+        }
+        .grid-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.7rem; }
+        }
+        .card {
+            background: #1a1a1a;
+            border: 2px solid #333;
+            padding: 2rem;
+            border-radius: 0;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+        .card:hover {
+            border-color: #ff00ff;
+            transform: translateY(-4px);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .card p {
+            font-size: 1rem;
+        }
+
+        /* === NAVIGATION === */
+        nav {
+            background: #0a0a0a;
+            border-bottom: 2px solid #ff00ff;
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: #ff00ff;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        nav ul li a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #ff00ff;
+        }
+        nav .tel-link {
+            background: #ff00ff;
+            color: #0a0a0a;
+            padding: 0.4rem 1rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 0;
+            transition: background 0.2s, color 0.2s;
+        }
+        nav .tel-link:hover {
+            background: #00ffff;
+            color: #0a0a0a;
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+        .hamburger-menu span {
+            width: 28px;
+            height: 3px;
+            background: #e0e0e0;
+            border-radius: 0;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background: #0a0a0a;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 1.5rem;
+                border-bottom: 2px solid #ff00ff;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+        }
+
+        /* === FOOTER === */
+        footer {
+            background: #0a0a0a;
+            border-top: 2px solid #333;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+        footer p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #ff00ff;
+        }
+
+        /* === HERO (minimal) === */
+        .hero {
+            text-align: center;
+            padding: 6rem 0 3rem;
+        }
+        .hero h1 {
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #ff00ff;
+            color: #0a0a0a;
+            padding: 1rem 2.5rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+            border: 2px solid #ff00ff;
+            transition: all 0.2s;
+        }
+        .cta-button:hover {
+            background: transparent;
+            color: #ff00ff;
+            border-color: #ff00ff;
+        }
+
+        /* === LIST / FAQ === */
+        .faq-item {
+            border-bottom: 1px solid #333;
+            padding: 1.5rem 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #00ffff;
+            margin-bottom: 0.5rem;
+        }
+        .faq-item p {
+            margin-bottom: 0;
+        }
+
+        /* === INFO PAGE SPECIFICS === */
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+        .info-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px dashed #333;
+            display: flex;
+            gap: 1rem;
+            align-items: baseline;
+        }
+        .info-list li span.label {
+            color: #ff00ff;
+            font-weight: 700;
+            min-width: 120px;
+            text-transform: uppercase;
+        }
+        .info-list li span.value {
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION (동일) -->
+    <nav>
+        <div class="logo">셔츠룸</div>
+        <div class="hamburger-menu" onclick="document.querySelector('nav ul').classList.toggle('active')">
+            <span></span><span></span><span></span>
+        </div>
+        <ul>
+            <li><a href="/">홈</a></li>
+            <li><a href="/info">정보</a></li>
+            <li><a href="/gallery">갤러리</a></li>
+            <li><a href="/contact">연락</a></li>
+            <li><a href="tel:010-6279-0862" class="tel-link">전화: 010-6279-0862</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- HERO -->
+        <section class="hero">
+            <h1>정보 — 숨김 없다</h1>
+            <p>여기 모든 걸 말한다. 위치, 시간, 컨셉, 철학. 궁금하면 다 읽어보든가. 선택은 니 몫이다.</p>
+            <a href="tel:010-6279-0862" class="cta-button">지금 전화 걸어</a>
+        </section>
+
+        <!-- 상세 정보 섹션 -->
+        <section class="section">
+            <h2>이게 마포 셔츠룸이다</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>📍 위치 & 공간</h3>
+                    <ul class="info-list">
+                        <li><span class="label">주소</span><span class="value">서울 마포구 와우산로 29길 42-6</span></li>
+                        <li><span class="label">역</span><span class="value">홍대입구역 3번 출구 도보 7분</span></li>
+                        <li><span class="label">컨셉</span><span class="value">브루털리즘 × 네온 보이드 — 거친 콘크리트 + 핑크 네온 사인</span></li>
+                        <li><span class="label">분위기</span><span class="value">N야 말해. 감성 쩔고. 힙말고 싶으면 나가</span></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>⏰ 시간 & 연락</h3>
+                    <ul class="info-list">
+                        <li><span class="label">운영</span><span class="value">매일 11:00 — 24:00 (라스트오더 23:00)</span></li>
+                        <li><span class="label">정기휴무</span><span class="value">매주 월요일 (쉰다. 니가 와도)</span></li>
+                        <li><span class="label">전화</span><span class="value">010-6279-0862 — 망설이지 말고 걸어</span></li>
+                        <li><span class="label">인스타</span><span class="value">@mapo_shirtsroom</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 가격 & 메뉴 -->
+        <section class="section">
+            <h2>가격 — 정직하게 받는다</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>☕ 시그니처</h3>
+                    <p>네온 라떼 (핑크) — 7,000원<br>콘크리트 아메리카노 — 5,500원<br>보이드 스무디 — 8,500원</p>
+                </div>
+                <div class="card">
+                    <h3>🍸 이브닝</h3>
+                    <p>셔츠룸 하이볼 — 12,000원<br>네온 맥주 — 6,500원<br>자정의 칵테일 — 14,000원</p>
+                </div>
+                <div class="card">
+                    <h3>🍰 사이드</h3>
+                    <p>무 (채식) — 4,000원<br>치즈 플레이트 — 9,000원<br>감자튀김 (트러플) — 7,500원</p>
+                </div>
+            </div>
+            <p style="margin-top:1.5rem; font-style:italic;">* 가격은 변동 가능. 니 지갑 사정은 몰라도 우리 맛은 보장한다.</p>
+        </section>
+
+        <!-- FAQ (질문은 직접적) -->
+        <section class="section">
+            <h2>FAQ — 물어볼 거 있으면 여기 보든가</h2>
+            <div class="faq-item">
+                <h4>“마포 셔츠룸이 뭐예요?”</h4>
+                <p>일반 카페로 오해하면 짜증난다. 여긴 브루털리즘 감성에 네온 불빛, 거친 콘크리트 사이에서 커피와 칵테일 마시는 힙플레이스. 셔츠룸이라 이름 붙였지만 실제로 셔츠 팔지 않는다. 분위기 팔지. 와서 느껴라.</p>
+            </div>
+            <div class="faq-item">
+                <h4>“주차 가능해요?”</h4>
+                <p>주차장 없다. 대중교통 타고 오든가, 걸어 오든가, 오토바이 타고 오든가. 근처 공
+</body>
+</html>

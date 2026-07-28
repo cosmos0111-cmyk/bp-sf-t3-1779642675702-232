@@ -304,83 +304,58 @@
     </style>
 </head>
 <body>
-    <!-- NAVIGATION (동일) -->
-    <nav>
-        <div class="logo">셔츠룸</div>
-        <div class="hamburger-menu" onclick="document.querySelector('nav ul').classList.toggle('active')">
-            <span></span><span></span><span></span>
-        </div>
-        <ul>
-            <li><a href="/">홈</a></li>
-            <li><a href="/info">정보</a></li>
-            <li><a href="/gallery">갤러리</a></li>
-            <li><a href="/contact">연락</a></li>
-            <li><a href="tel:010-6279-0862" class="tel-link">전화: 010-6279-0862</a></li>
-        </ul>
-    </nav>
 
-    <main class="container">
-        <!-- HERO -->
-        <section class="hero">
-            <h1>정보 — 숨김 없다</h1>
-            <p>여기 모든 걸 말한다. 위치, 시간, 컨셉, 철학. 궁금하면 다 읽어보든가. 선택은 니 몫이다.</p>
-            <a href="tel:010-6279-0862" class="cta-button">지금 전화 걸어</a>
-        </section>
+<main>
+<section class="hero">
+<h1>마포 셔츠룸 정보</h1>
+<p>마포 지역에서 셔츠룸을 처음 찾는 분들을 위해 이용 절차와 공간 구성, 예약 방식을 정리했습니다. 힙플레이스 카페 감성을 더한 인테리어와 동선을 기준으로 안내합니다.</p>
+</section>
+<section class="section">
+<h2>이용 안내</h2>
+<div class="grid-2">
+<div class="card">
+<h3>예약 방식</h3>
+<p>전화 문의를 통해 인원과 희망 시간대를 전달하면 좌석 배치와 대기 여부를 확인할 수 있습니다. 당일 방문보다 사전 문의가 대기 시간을 줄이는 데 도움이 됩니다.</p>
+</div>
+<div class="card">
+<h3>공간 구성</h3>
+<p>독립된 룸 형태로 구성되어 있어 인원수와 목적에 따라 공간을 나눠 안내받을 수 있습니다. 테이블 간격과 조명 배치는 매장마다 차이가 있으므로 방문 전 확인이 필요합니다.</p>
+</div>
+</div>
+</section>
+<section class="section">
+<h2>지역 정보</h2>
+<p>마포는 교통 접근성이 좋아 지하철과 버스 환승이 편리한 편입니다. 주변에 주차 공간이 제한적인 매장이 많아 대중교통 이용이나 사전 주차 확인을 권장합니다. 인근에 다양한 업종이 밀집해 있어 저녁 시간대 유동 인구가 많은 편입니다.</p>
+</section>
+<section class="section">
+<h2>체크리스트</h2>
+<ul class="info-list">
+<li><span class="label">인원 확인</span><span class="value">방문 인원에 맞는 룸 규모인지 사전 확인</span></li>
+<li><span class="label">시간대</span><span class="value">피크 시간과 한산한 시간대를 구분해 문의</span></li>
+<li><span class="label">결제 방식</span><span class="value">현장별로 결제 수단이 다를 수 있어 사전 확인 필요</span></li>
+<li><span class="label">연락처</span><span class="value">방문 전 전화로 예약 가능 여부 확인</span></li>
+</ul>
+</section>
+<section class="section">
+<h2>자주 묻는 질문</h2>
+<div class="faq-item">
+<h3>예약 없이 방문해도 되나요?</h3>
+<p>당일 방문도 가능하지만 시간대에 따라 대기가 발생할 수 있어 사전 연락을 권장합니다.</p>
+</div>
+<div class="faq-item">
+<h3>단체 방문도 가능한가요?</h3>
+<p>인원 규모에 따라 룸 배정이 달라질 수 있으므로 방문 전 인원수를 미리 전달하는 것이 좋습니다.</p>
+</div>
+<div class="faq-item">
+<h3>주차는 가능한가요?</h3>
+<p>매장별로 주차 여건이 다르므로 방문 전 문의를 통해 확인하는 것이 안전합니다.</p>
+</div>
+</section>
+<section class="section">
+<a class="cta-button tel-link" href="tel:010-6279-0862">010-6279-0862</a>
+</section>
+</main>
 
-        <!-- 상세 정보 섹션 -->
-        <section class="section">
-            <h2>이게 마포 셔츠룸이다</h2>
-            <div class="grid-2">
-                <div class="card">
-                    <h3>📍 위치 & 공간</h3>
-                    <ul class="info-list">
-                        <li><span class="label">주소</span><span class="value">서울 마포구 와우산로 29길 42-6</span></li>
-                        <li><span class="label">역</span><span class="value">홍대입구역 3번 출구 도보 7분</span></li>
-                        <li><span class="label">컨셉</span><span class="value">브루털리즘 × 네온 보이드 — 거친 콘크리트 + 핑크 네온 사인</span></li>
-                        <li><span class="label">분위기</span><span class="value">N야 말해. 감성 쩔고. 힙말고 싶으면 나가</span></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>⏰ 시간 & 연락</h3>
-                    <ul class="info-list">
-                        <li><span class="label">운영</span><span class="value">매일 11:00 — 24:00 (라스트오더 23:00)</span></li>
-                        <li><span class="label">정기휴무</span><span class="value">매주 월요일 (쉰다. 니가 와도)</span></li>
-                        <li><span class="label">전화</span><span class="value">010-6279-0862 — 망설이지 말고 걸어</span></li>
-                        <li><span class="label">인스타</span><span class="value">@mapo_shirtsroom</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
 
-        <!-- 가격 & 메뉴 -->
-        <section class="section">
-            <h2>가격 — 정직하게 받는다</h2>
-            <div class="grid-3">
-                <div class="card">
-                    <h3>☕ 시그니처</h3>
-                    <p>네온 라떼 (핑크) — 7,000원<br>콘크리트 아메리카노 — 5,500원<br>보이드 스무디 — 8,500원</p>
-                </div>
-                <div class="card">
-                    <h3>🍸 이브닝</h3>
-                    <p>셔츠룸 하이볼 — 12,000원<br>네온 맥주 — 6,500원<br>자정의 칵테일 — 14,000원</p>
-                </div>
-                <div class="card">
-                    <h3>🍰 사이드</h3>
-                    <p>무 (채식) — 4,000원<br>치즈 플레이트 — 9,000원<br>감자튀김 (트러플) — 7,500원</p>
-                </div>
-            </div>
-            <p style="margin-top:1.5rem; font-style:italic;">* 가격은 변동 가능. 니 지갑 사정은 몰라도 우리 맛은 보장한다.</p>
-        </section>
-
-        <!-- FAQ (질문은 직접적) -->
-        <section class="section">
-            <h2>FAQ — 물어볼 거 있으면 여기 보든가</h2>
-            <div class="faq-item">
-                <h4>“마포 셔츠룸이 뭐예요?”</h4>
-                <p>일반 카페로 오해하면 짜증난다. 여긴 브루털리즘 감성에 네온 불빛, 거친 콘크리트 사이에서 커피와 칵테일 마시는 힙플레이스. 셔츠룸이라 이름 붙였지만 실제로 셔츠 팔지 않는다. 분위기 팔지. 와서 느껴라.</p>
-            </div>
-            <div class="faq-item">
-                <h4>“주차 가능해요?”</h4>
-                <p>주차장 없다. 대중교통 타고 오든가, 걸어 오든가, 오토바이 타고 오든가. 근처 공
 </body>
 </html>
